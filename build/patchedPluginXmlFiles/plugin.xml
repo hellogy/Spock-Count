@@ -1,0 +1,24 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <id>org.example.Spock-Count</id>
+  <name>Spock-Count</name>
+  <vendor email="13818435845@163.com" url="http://www.gy.com">hellogy</vendor>
+  <description>
+    描述&lt;br&gt;
+    &lt;em&gt;most HTML tags may be used&lt;/em&gt;
+    </description>
+  <depends>com.intellij.modules.platform</depends>
+  <idea-version since-build="193.0"/>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <action id="com.gy.spock.count" class="com.gy.com.action.Action" text="Unit-Test-Count">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+    </action>
+    <action id="12" class="com.gy.com.action.Action" text="spock-count">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+</idea-plugin>

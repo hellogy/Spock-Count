@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>org.example.Spock-Count</id>
+    <name>Spock-Count</name>
+    <vendor email="13818435845@163.com" url="http://www.gy.com">hellogy</vendor>
+
+    <description><![CDATA[
+    描述<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <!-- 插件兼容IDEAbuild 号-->
+    <idea-version since-build="193.0"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.gy.spock.count" class="com.gy.com.action.Action" text="Unit-Test-Count">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+        </action>
+        <action id="12" class="com.gy.com.action.Action" text="spock-count">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

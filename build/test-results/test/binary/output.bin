@@ -1,0 +1,117 @@
+
+digraph {
+%n0 [label="root (CompilationUnit)"];
+n1 [label="types"];
+
+n0 -> n1;
+1n2 [label="type (ClassOrInterfaceDeclaration)"];
+
+n1 -> n2;
+"n3 [label="isInterface='false'"];
+
+n2 -> n3;
+ n4 [label="name (SimpleName)"];
+
+n2 -> n4;
+%n5 [label="identifier='Calculate'"];
+
+n4 -> n5;
+n6 [label="members"];
+
+n2 -> n6;
+)n7 [label="member (MethodDeclaration)"];
+
+n6 -> n7;
+n8 [label="body (BlockStmt)"];
+
+n7 -> n8;
+n9 [label="statements"];
+
+n8 -> n9;
+*n10 [label="statement (ExpressionStmt)"];
+n9 -> n10;
+4n11 [label="expression (VariableDeclarationExpr)"];
+n10 -> n11;
+n12 [label="variables"];
+n11 -> n12;
+-n13 [label="variable (VariableDeclarator)"];
+n12 -> n13;
+(n14 [label="initializer (BinaryExpr)"];
+n13 -> n14;
+n15 [label="operator='PLUS'"];
+n14 -> n15;
+n16 [label="left (NameExpr)"];
+n14 -> n16;
+!n17 [label="name (SimpleName)"];
+n16 -> n17;
+n18 [label="identifier='a'"];
+n17 -> n18;
+ n19 [label="right (NameExpr)"];
+n14 -> n19;
+!n20 [label="name (SimpleName)"];
+n19 -> n20;
+n21 [label="identifier='b'"];
+n20 -> n21;
+!n22 [label="name (SimpleName)"];
+n13 -> n22;
+n23 [label="identifier='c'"];
+n22 -> n23;
+$n24 [label="type (PrimitiveType)"];
+n13 -> n24;
+n25 [label="type='INT'"];
+n24 -> n25;
+&n26 [label="statement (ReturnStmt)"];
+n9 -> n26;
+%n27 [label="expression (NameExpr)"];
+n26 -> n27;
+!n28 [label="name (SimpleName)"];
+n27 -> n28;
+n29 [label="identifier='c'"];
+n28 -> n29;
+$n30 [label="type (PrimitiveType)"];
+n7 -> n30;
+n31 [label="type='INT'"];
+n30 -> n31;
+!n32 [label="name (SimpleName)"];
+n7 -> n32;
+ n33 [label="identifier='sum'"];
+n32 -> n33;
+n34 [label="modifiers"];
+n7 -> n34;
+#n35 [label="modifier (Modifier)"];
+n34 -> n35;
+ n36 [label="keyword='PUBLIC'"];
+n35 -> n36;
+n37 [label="parameters"];
+n7 -> n37;
+%n38 [label="parameter (Parameter)"];
+n37 -> n38;
+!n39 [label="isVarArgs='false'"];
+n38 -> n39;
+!n40 [label="name (SimpleName)"];
+n38 -> n40;
+n41 [label="identifier='a'"];
+n40 -> n41;
+$n42 [label="type (PrimitiveType)"];
+n38 -> n42;
+n43 [label="type='INT'"];
+n42 -> n43;
+%n44 [label="parameter (Parameter)"];
+n37 -> n44;
+!n45 [label="isVarArgs='false'"];
+n44 -> n45;
+!n46 [label="name (SimpleName)"];
+n44 -> n46;
+n47 [label="identifier='b'"];
+n46 -> n47;
+$n48 [label="type (PrimitiveType)"];
+n44 -> n48;
+n49 [label="type='INT'"];
+n48 -> n49;
+n50 [label="modifiers"];
+n2 -> n50;
+#n51 [label="modifier (Modifier)"];
+n50 -> n51;
+ n52 [label="keyword='PUBLIC'"];
+n51 -> n52;
+}
